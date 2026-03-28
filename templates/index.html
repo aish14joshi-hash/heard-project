@@ -7,7 +7,8 @@
 
 <title>HearD</title>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- ✅ FIXED LINE HERE -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <style>
 
@@ -73,11 +74,8 @@ border-radius:6px;
 <div class="buttons">
 
 <a href="/gesture">Gesture → Text</a>
-
 <a href="/text">Text → Gesture</a>
-
 <a href="/learn">Learn Sign Language</a>
-
 <a href="/emergency">Emergency</a>
 
 </div>
