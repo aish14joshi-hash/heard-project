@@ -7,7 +7,7 @@
 
 <title>HearD</title>
 
-<!-- ✅ FIXED LINE HERE -->
+<!-- ✅ Correct Flask CSS link -->
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <style>
@@ -53,7 +53,9 @@ border-radius:6px;
 
 </head>
 
-<body class="home-bg">
+<!-- ✅ Background FIXED HERE -->
+<body class="home-bg"
+style="background-image: url('{{ url_for('static', filename='images/background-art.png') }}');">
 
 <!-- THREE DOT MENU -->
 <div class="menu-btn" onclick="toggleMenu()">⋮</div>
@@ -72,18 +74,15 @@ border-radius:6px;
 <p class="tagline">Signs that Speak, Connections you Seek.</p>
 
 <div class="buttons">
-
 <a href="/gesture">Gesture → Text</a>
 <a href="/text">Text → Gesture</a>
 <a href="/learn">Learn Sign Language</a>
 <a href="/emergency">Emergency</a>
-
 </div>
 
 </div>
 
 <script>
-
 function toggleMenu(){
 const menu=document.getElementById("menu");
 
@@ -93,7 +92,6 @@ menu.style.display="none";
 menu.style.display="block";
 }
 }
-
 </script>
 
 </body>
