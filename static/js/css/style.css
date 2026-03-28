@@ -11,14 +11,12 @@ body {
 
 .home-bg {
 
-    background-image: url("/static/images/background-art.png");
+    /* ✅ FIXED PATH HERE */
+    background-image: url("../images/background-art.png");
 
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 
 }
@@ -28,9 +26,7 @@ body {
 .home-bg::before {
 
     content: "";
-
     position: fixed;
-
     top: 0;
     left: 0;
 
@@ -48,15 +44,11 @@ body {
 .container {
 
     max-width: 600px;
-
     margin: 120px auto;
-
     padding: 40px;
 
     background: rgba(255,255,255,0.85);
-
     border-radius: 16px;
-
     backdrop-filter: blur(6px);
 
 }
@@ -66,9 +58,7 @@ body {
 h1 {
 
     font-size: 42px;
-
     color: #3a2a1f;
-
     margin-bottom: 5px;
 
 }
@@ -76,7 +66,6 @@ h1 {
 .tagline {
 
     font-size: 18px;
-
     margin-bottom: 30px;
 
 }
@@ -86,9 +75,7 @@ h1 {
 .buttons {
 
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
 
 }
@@ -98,17 +85,14 @@ h1 {
 a {
 
     text-decoration: none;
-
     padding: 14px 20px;
 
     font-size: 18px;
-
     font-weight: bold;
 
     border-radius: 10px;
 
     background-color: #5a3b2e;
-
     color: #f5e6d3;
 
     transition: all 0.3s ease;
@@ -120,7 +104,6 @@ a {
 a:hover {
 
     background-color: #b33a2b;
-
     transform: scale(1.05);
 
 }
@@ -132,7 +115,6 @@ a:hover {
     .container {
 
         margin: 60px 20px;
-
         padding: 30px;
 
     }
