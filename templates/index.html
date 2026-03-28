@@ -7,7 +7,7 @@
 
 <title>HearD</title>
 
-<!-- ✅ Correct Flask CSS link -->
+<!-- ✅ Correct CSS Path -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 <style>
@@ -20,6 +20,7 @@ right:25px;
 font-size:28px;
 cursor:pointer;
 color:#fff;
+z-index: 10;
 }
 
 /* Popup menu */
@@ -33,6 +34,7 @@ border-radius:10px;
 box-shadow:0 8px 20px rgba(0,0,0,0.2);
 padding:10px;
 width:180px;
+z-index: 10;
 }
 
 /* Menu links */
@@ -53,9 +55,8 @@ border-radius:6px;
 
 </head>
 
-<!-- ✅ Background FIXED HERE -->
-<body class="home-bg"
-style="background-image: url('{{ url_for('static', filename='images/background-art.png') }}');">
+<!-- ✅ CLEAN BACKGROUND (handled by CSS only) -->
+<body class="home-bg">
 
 <!-- THREE DOT MENU -->
 <div class="menu-btn" onclick="toggleMenu()">⋮</div>
