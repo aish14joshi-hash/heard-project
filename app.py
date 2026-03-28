@@ -32,15 +32,15 @@ def learn():
 def emergency():
     return render_template("emergency.html")
 
-# 404 Error page (optional)
+# 404 Error page
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template("404.html"), 404
 
 
 # ------------------------
-# RUN APP
+# IMPORTANT FOR RENDER
 # ------------------------
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    app.run(debug=True)
