@@ -10,6 +10,9 @@ body {
 /* ===== HOMEPAGE BACKGROUND ===== */
 
 .home-bg {
+    /* ✅ ADD THIS LINE (IMPORTANT FIX) */
+    background-image: url("../images/background-art.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
